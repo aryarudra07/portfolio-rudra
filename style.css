@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ink: #1c1914;
+  --paper: #f4efe4;
+  --rule: #c9bba3;
+  --accent: #9a3b2f;
+  --muted: #5c5348;
+}
+
+html {
+  font-size: 112.5%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+.masthead {
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.kicker {
+  margin: 0 0 0.4rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0;
+  font-family: Fraunces, Georgia, serif;
+  font-size: clamp(2.25rem, 6vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+  max-width: 36ch;
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+section {
+  margin-bottom: 2.25rem;
+}
+
+.about p {
+  margin: 0 0 1rem;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+.skills ul,
+.projects ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills li,
+.projects li {
+  padding: 0.65rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.skills li:last-child,
+.projects li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.projects a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.projects a:hover,
+.projects a:focus-visible {
+  color: var(--ink);
+}
+
+.project-note {
+  color: var(--muted);
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--ink);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (min-width: 720px) {
+  .page {
+    padding-top: 5rem;
+  }
+}

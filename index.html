@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rudra arya — Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <p class="kicker">Personal profile</p>
+      <h1>Rudra arya</h1>
+      <p class="tagline">PLACEHOLDER Short role or headline, for example: designer and developer based in City.</p>
+    </header>
+
+    <main>
+      <section class="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          PLACEHOLDER Write a short introduction here. Mention what you do, what you care about,
+          and how people can think of working with you. Replace this paragraph with your own story.
+        </p>
+        <p>
+          PLACEHOLDER Optional second paragraph: education, current focus, or a note about what you
+          are exploring next.
+        </p>
+      </section>
+
+      <section class="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <ul>
+          <li>PLACEHOLDER Skill one (for example: HTML &amp; CSS)</li>
+          <li>PLACEHOLDER Skill two (for example: JavaScript)</li>
+          <li>PLACEHOLDER Skill three (for example: accessibility)</li>
+          <li>PLACEHOLDER Skill four (for example: writing or research)</li>
+          <li>PLACEHOLDER Skill five (for example: collaboration)</li>
+        </ul>
+      </section>
+
+      <section class="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <ul>
+          <li>
+            <a href="https://example.com/placeholder-project-one">PLACEHOLDER Project One</a>
+            <span class="project-note"> — PLACEHOLDER One-line description of this project.</span>
+          </li>
+          <li>
+            <a href="https://example.com/placeholder-project-two">PLACEHOLDER Project Two</a>
+            <span class="project-note"> — PLACEHOLDER One-line description of this project.</span>
+          </li>
+          <li>
+            <a href="https://example.com/placeholder-project-three">PLACEHOLDER Project Three</a>
+            <span class="project-note"> — PLACEHOLDER One-line description of this project.</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>PLACEHOLDER Contact: you@example.com · City, Country</p>
+      <section id="aiChatSection" class="ai-chat">
+        <h2>Ask My AI Assistant</h2>
+      
+        <p>
+          Ask questions about this portfolio,
+          projects, and technologies.
+        </p>
+      
+        <div
+          id="chatMessages"
+          aria-live="polite"
+        ></div>
+      
+        <div class="chat-controls">
+          <input
+            type="text"
+            id="userInput"
+            placeholder="Ask a question..."
+          />
+      
+          <button id="sendButton" type="button">
+            Send
+          </button>
+        </div>
+      
+        <p id="chatStatus" role="status"></p>
+      
+        <p class="chat-note">
+          AI chat is available during the local
+          classroom demonstration only.
+        </p>
+      </section>
+    </footer>
+    <script scr="script.js"></script>
+    <script src="config.js"></script>
+    <script src="chatbot.js"></script>
+
+  </div>
+</body>
+</html>
